@@ -1,6 +1,12 @@
 import React from "react";
 
-export default function WelcomePage() {
+export default function WelcomePage(props) {
+
+  const routeToHomePage = e =>{
+    e.preventDefault();
+    props.history.push();
+  }
+
   return (
     <section className="welcome-page">
       <header>
@@ -11,6 +17,9 @@ export default function WelcomePage() {
           alt="rick"
         />
       </header>
+      <button onClick={routeToHomePage} className="md-button shop-button">
+       hello from WP
+      </button>
     </section>
   );
 }
