@@ -24,11 +24,12 @@ const CharacterCard= props =>{
     return(
 
 
-        <Container key ={props.index}>
-                <StarName>{props.name}</StarName>
-                <p>Status: {props.status}</p>
-                <p>Species: {props.species}</p>
-                <p>Created: {props.created}</p>
+        <Container key ={props.id}>
+                 {/* <img src={props.image} alt="character" /> */}
+        <h3>{props.name}</h3>
+        <h4>Status: {props.status}</h4>
+        <h4>Species: {props.species}</h4>
+        <h4>Location: {props.location}</h4>
 
 
         </Container>

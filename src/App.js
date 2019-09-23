@@ -1,14 +1,11 @@
-import React from "react";
-import Header from "./components/Header.js";
-import WelcomePage from "./components/WelcomePage";
+import React, {Component} from "react";
+import {BrowserRouter as Router, Route} from "react-router-dom"
 import CharacterList from "./components/CharacterList";
 
 export default function App() {
   return (
-    <main>
-      <Header />
-      <WelcomePage />
-      {/* <CharacterList /> */}
+    <main> 
+      <CharacterList />
     </main>
   );
 }
